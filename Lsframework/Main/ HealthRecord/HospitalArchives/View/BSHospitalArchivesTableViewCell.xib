@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="148" id="KGk-i7-Jjw" customClass="BSHospitalArchivesTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="458" height="148"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="458" height="147"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="自主检查上传" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="03T-Ua-KS1">
+                        <rect key="frame" x="10" y="10" width="108" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="18" id="wEP-O9-viX"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="项目：儿童体检" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9lj-f9-F5X">
+                        <rect key="frame" x="10" y="122" width="105" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="fKE-2l-koQ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FCArrowRight" translatesAutoresizingMaskIntoConstraints="NO" id="gVA-3z-iEm">
+                        <rect key="frame" x="428" y="65" width="10" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="18" id="8U7-oy-pge"/>
+                            <constraint firstAttribute="width" constant="10" id="IYS-T6-Ttm"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4444年44月44日" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1iv-5V-ipb">
+                        <rect key="frame" x="300" y="66" width="113" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="113" id="Ehv-kn-oY7"/>
+                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="113" id="cmJ-Md-76k"/>
+                            <constraint firstAttribute="width" constant="109" id="n1K-vq-z4b"/>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="113" id="vWe-94-4YZ"/>
+                            <constraint firstAttribute="width" constant="112" id="zBY-Fo-bxL"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="cmJ-Md-76k"/>
+                                <exclude reference="n1K-vq-z4b"/>
+                                <exclude reference="vWe-94-4YZ"/>
+                                <exclude reference="zBY-Fo-bxL"/>
+                            </mask>
+                        </variation>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="03T-Ua-KS1" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="056-Y9-NNu"/>
+                    <constraint firstItem="1iv-5V-ipb" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="03T-Ua-KS1" secondAttribute="trailing" constant="10" id="0GB-J8-ftv"/>
+                    <constraint firstItem="1iv-5V-ipb" firstAttribute="centerY" secondItem="gVA-3z-iEm" secondAttribute="centerY" id="42t-yl-IeV"/>
+                    <constraint firstItem="gVA-3z-iEm" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="UNr-pV-bec"/>
+                    <constraint firstAttribute="bottom" secondItem="9lj-f9-F5X" secondAttribute="bottom" constant="10" id="WnI-OT-dex"/>
+                    <constraint firstItem="1iv-5V-ipb" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="9lj-f9-F5X" secondAttribute="trailing" constant="10" id="hJD-eT-7a9"/>
+                    <constraint firstItem="9lj-f9-F5X" firstAttribute="leading" secondItem="03T-Ua-KS1" secondAttribute="leading" id="pee-Fj-B6P"/>
+                    <constraint firstItem="03T-Ua-KS1" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="qYn-dj-dlq"/>
+                    <constraint firstAttribute="trailing" secondItem="gVA-3z-iEm" secondAttribute="trailing" constant="20" id="typ-qS-86J"/>
+                    <constraint firstItem="gVA-3z-iEm" firstAttribute="leading" secondItem="1iv-5V-ipb" secondAttribute="trailing" constant="15" id="wjs-vC-v2r"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="dateTime" destination="1iv-5V-ipb" id="LeH-yh-riB"/>
+                <outlet property="hospitalName" destination="03T-Ua-KS1" id="Gkk-8C-LOG"/>
+                <outlet property="project" destination="9lj-f9-F5X" id="Icr-ry-xKn"/>
+            </connections>
+            <point key="canvasLocation" x="422" y="296"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="FCArrowRight" width="10" height="18"/>
+    </resources>
+</document>

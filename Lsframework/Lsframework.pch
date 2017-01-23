@@ -1,0 +1,42 @@
+//
+//  Lsframework.pch
+//  Lsframework
+//
+//  Created by 梁继明 on 16/3/24.
+//  Copyright © 2016年 梁继明. All rights reserved.
+//
+
+#ifndef Lsframework_pch
+#define Lsframework_pch
+
+#ifdef __OBJC__
+
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import "GVUserDefaults+UserEntity.h"
+#import "RDVTabBarController.h"
+#import "RDVTabBarItem.h"
+#import <IQKeyboardManager/IQKeyboardManager.h>
+#import "FamilyDefine.h"
+#import "ColorMacro.h"
+#import "AppConfig.h"
+#import "FontMacro.h"
+#import "NoticaitonMacro.h"
+#import <MJRefresh.h>
+#import <MagicalRecord/MagicalRecord.h>
+#import <Masonry.h>
+#import "UIView+Category.h"
+#import "UIImageView+Category.h"
+#import <SDAutoLayout/UIView+SDAutoLayout.h>
+#import "NSDate+Category.h"
+#import "ProgressUtil.h"
+#import "NSString+Category.h"
+#import <UIImageView+WebCache.h>
+#import "UMMobClick/MobClick.h"
+#import "UILabel+VerticalAlignment.h"
+#import "JMFoundation.h"
+//#import "wax.h"
+
+#endif
+
+#endif /* Lsframework_pch */

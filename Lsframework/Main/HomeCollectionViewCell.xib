@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="HomeCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TimeLine" translatesAutoresizingMaskIntoConstraints="NO" id="lYO-ah-hgY">
+                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="lYO-ah-hgY" secondAttribute="height" multiplier="1:1" id="c5s-e9-prQ"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1岁2月" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fh4-y7-opo">
+                        <rect key="frame" x="9.5" y="43" width="80" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.92941176470588238" green="0.36862745098039218" blue="0.36470588235294116" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstItem="fh4-y7-opo" firstAttribute="width" secondItem="lYO-ah-hgY" secondAttribute="width" constant="-20" id="3cP-1R-1Vx"/>
+                <constraint firstItem="lYO-ah-hgY" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="FVz-rc-ddf"/>
+                <constraint firstAttribute="bottom" secondItem="lYO-ah-hgY" secondAttribute="bottom" id="Fbn-Kp-zWx"/>
+                <constraint firstItem="fh4-y7-opo" firstAttribute="trailing" secondItem="lYO-ah-hgY" secondAttribute="trailing" id="ToR-j6-2Vw"/>
+                <constraint firstItem="fh4-y7-opo" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="Uqa-8B-nOy"/>
+                <constraint firstItem="fh4-y7-opo" firstAttribute="leading" secondItem="lYO-ah-hgY" secondAttribute="leading" id="VVJ-Hd-qUB"/>
+                <constraint firstItem="fh4-y7-opo" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="Z1C-7n-emk"/>
+                <constraint firstItem="lYO-ah-hgY" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Zsw-mD-qu2"/>
+                <constraint firstAttribute="trailing" secondItem="lYO-ah-hgY" secondAttribute="trailing" id="grN-3b-6Wc"/>
+                <constraint firstItem="lYO-ah-hgY" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="hUW-eb-oGv"/>
+                <constraint firstItem="lYO-ah-hgY" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="rff-En-65R"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="FVz-rc-ddf"/>
+                    <exclude reference="hUW-eb-oGv"/>
+                    <exclude reference="rff-En-65R"/>
+                    <exclude reference="ToR-j6-2Vw"/>
+                    <exclude reference="VVJ-Hd-qUB"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="lbDate" destination="fh4-y7-opo" id="fpP-NG-T0J"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="TimeLine" width="75" height="75"/>
+    </resources>
+</document>

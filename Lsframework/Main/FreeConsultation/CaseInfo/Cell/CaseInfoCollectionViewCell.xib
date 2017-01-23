@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CaseInfoCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="100" height="120"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="100" height="120"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="AGj-HT-gwF">
+                        <rect key="frame" x="12" y="8" width="76" height="76"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="38"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FCAvatar" translatesAutoresizingMaskIntoConstraints="NO" id="LVD-1v-2x8">
+                        <rect key="frame" x="12" y="8" width="76" height="76"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="76" id="MZD-gn-BfK"/>
+                            <constraint firstAttribute="height" constant="76" id="aQv-fH-HU9"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="38"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="宝宝" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MEP-GN-Zus">
+                        <rect key="frame" x="33" y="91" width="34" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SelectedChild" translatesAutoresizingMaskIntoConstraints="NO" id="1q7-Xc-kXD">
+                        <rect key="frame" x="65" y="61" width="23" height="23"/>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="AGj-HT-gwF" firstAttribute="leading" secondItem="LVD-1v-2x8" secondAttribute="leading" id="2hE-Op-6t7"/>
+                <constraint firstItem="AGj-HT-gwF" firstAttribute="bottom" secondItem="LVD-1v-2x8" secondAttribute="bottom" id="8Ca-JB-SSy"/>
+                <constraint firstItem="LVD-1v-2x8" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="Ipp-AF-Ums"/>
+                <constraint firstItem="1q7-Xc-kXD" firstAttribute="trailing" secondItem="LVD-1v-2x8" secondAttribute="trailing" id="MWA-aO-boJ"/>
+                <constraint firstItem="MEP-GN-Zus" firstAttribute="top" secondItem="LVD-1v-2x8" secondAttribute="bottom" constant="7" id="Wit-5Z-5oY"/>
+                <constraint firstItem="1q7-Xc-kXD" firstAttribute="bottom" secondItem="LVD-1v-2x8" secondAttribute="bottom" id="aA3-pb-Qbu"/>
+                <constraint firstItem="AGj-HT-gwF" firstAttribute="top" secondItem="LVD-1v-2x8" secondAttribute="top" id="fT3-aS-Maf"/>
+                <constraint firstItem="LVD-1v-2x8" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="q3I-lz-Hue"/>
+                <constraint firstItem="MEP-GN-Zus" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="qDi-SA-Hi1"/>
+                <constraint firstItem="AGj-HT-gwF" firstAttribute="trailing" secondItem="LVD-1v-2x8" secondAttribute="trailing" id="scA-WE-On4"/>
+            </constraints>
+            <connections>
+                <outlet property="imageAvatar" destination="AGj-HT-gwF" id="XhP-Hz-6j5"/>
+                <outlet property="imageBg" destination="LVD-1v-2x8" id="25O-fH-i8k"/>
+                <outlet property="imageSelected" destination="1q7-Xc-kXD" id="UQC-o4-oNy"/>
+                <outlet property="lbTitle" destination="MEP-GN-Zus" id="k2m-pG-3Po"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="FCAvatar" width="76" height="75"/>
+        <image name="SelectedChild" width="23" height="23"/>
+    </resources>
+</document>

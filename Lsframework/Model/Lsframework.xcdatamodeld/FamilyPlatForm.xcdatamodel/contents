@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11232" systemVersion="15G31" minimumToolsVersion="Xcode 7.0" sourceLanguage="Objective-C" userDefinedModelVersionIdentifier="">
+    <entity name="CityEntity" representedClassName="CityEntity" syncable="YES">
+        <attribute name="keyid" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="provinceId" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="provinceName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ssqId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ssqName" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="relationship" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ProvinceEntity" inverseName="relationship" inverseEntity="ProvinceEntity" syncable="YES"/>
+    </entity>
+    <entity name="ConfiguresEntity" representedClassName="ConfiguresEntity" syncable="YES">
+        <attribute name="key" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="keyID" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="value" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="DateEntity" representedClassName="DateEntity" syncable="YES">
+        <attribute name="day" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="month" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="year" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="DefaultChildEntity" representedClassName="DefaultChildEntity" syncable="YES">
+        <attribute name="babyID" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="birthDate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="birthHeight" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="birthWeight" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="childGroupTime" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="childImg" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="childName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="childSex" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="gJ" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="mZ" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="nL" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userName" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="DepartmentEntity" representedClassName="DepartmentEntity" syncable="YES">
+        <attribute name="departName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="departPY" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="hospitalId" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="keyId" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="timeStamps" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="HospitalEntity" representedClassName="HospitalEntity" syncable="YES">
+        <attribute name="cityId" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="hName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="keyid" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+    </entity>
+    <entity name="MenuEntity" representedClassName="MenuEntity" syncable="YES">
+        <attribute name="createDate" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="dictionaryName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="menuId" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="parentId" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+    </entity>
+    <entity name="MessageEntity" representedClassName="MessageEntity" syncable="YES">
+        <attribute name="detail" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="NationalityEntity" representedClassName="NationalityEntity" syncable="YES">
+        <attribute name="dictionaryName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="mId" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="NationEntity" representedClassName="NationEntity" syncable="YES">
+        <attribute name="dictionaryName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="mId" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="ProvinceEntity" representedClassName="ProvinceEntity" syncable="YES">
+        <attribute name="keyid" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="ssqId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ssqName" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="relationship" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="CityEntity" inverseName="relationship" inverseEntity="CityEntity" syncable="YES"/>
+    </entity>
+    <entity name="SearchKeyWordsEntity" representedClassName="SearchKeyWordsEntity" syncable="YES">
+        <attribute name="rowID" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="words" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="VoiceEntity" representedClassName="VoiceEntity" syncable="YES">
+        <attribute name="data" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="url" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="CityEntity" positionX="9" positionY="135" width="128" height="135"/>
+        <element name="ConfiguresEntity" positionX="-9" positionY="162" width="128" height="90"/>
+        <element name="DateEntity" positionX="-9" positionY="162" width="128" height="90"/>
+        <element name="DefaultChildEntity" positionX="0" positionY="135" width="128" height="225"/>
+        <element name="DepartmentEntity" positionX="-9" positionY="117" width="128" height="120"/>
+        <element name="HospitalEntity" positionX="36" positionY="171" width="128" height="90"/>
+        <element name="MenuEntity" positionX="-9" positionY="144" width="128" height="105"/>
+        <element name="MessageEntity" positionX="-47" positionY="51" width="128" height="75"/>
+        <element name="NationalityEntity" positionX="-54" positionY="9" width="128" height="75"/>
+        <element name="NationEntity" positionX="-47" positionY="132" width="128" height="75"/>
+        <element name="ProvinceEntity" positionX="-27" positionY="117" width="128" height="105"/>
+        <element name="VoiceEntity" positionX="0" positionY="171" width="128" height="75"/>
+        <element name="SearchKeyWordsEntity" positionX="-9" positionY="162" width="128" height="75"/>
+    </elements>
+</model>
